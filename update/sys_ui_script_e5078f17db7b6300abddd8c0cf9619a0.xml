@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Client-side logic for Angular App</description>
+        <global>false</global>
+        <name>x_202591_angular_a.angular_app_client_lo</name>
+        <script><![CDATA[/*var x_202591_angular_a = x_202591_angular_a || {};
+
+x_202591_angular_a.angular_app_client_logic = (function() {
+	"use strict";
+*/
+/* set your private variables and functions here. For example: 
+	var privateVar = 0; 
+	function private_function() {
+		return ++privateVar;
+	}
+*/
+
+/* Share variables between multiple UI scripts by adding them to your scope object. For example: 
+	x_202591_angular_a.sharedVar = 0; 
+
+ Then access them in your scripts the same way. For example: 
+	function get_shared() {
+		return x_202591_angular_a.sharedVar;
+	}
+*/
+/*
+	return {
+*/
+/* set your public API here. For example:
+		incrementAndReturnPrivateVar: function() {
+			return private_function();
+		},
+*/
+/*
+		type:  "angular_app_client_logic"
+	};
+})();
+*/
+angular.module('angularapp',[]);
+angular.module('angularapp').controller('AngularAppCtrl', function($scope){
+	
+	$scope.myVar = '';
+	$scope.i = 0;
+	
+	$scope.clearTxt = function(){
+		$scope.myVar = '';
+		$scope.i++;
+		alert("The myVar value was cleared " + $scope.i + " times by " + g_user.userName + ".");
+	};
+});]]></script>
+        <script_name>angular_app_client_logic</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 21:26:31</sys_created_on>
+        <sys_id>e5078f17db7b6300abddd8c0cf9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_202591_angular_a.angular_app_client_lo</sys_name>
+        <sys_package display_value="Angular App" source="x_202591_angular_a">d236ba57db3b6300abddd8c0cf9619ac</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Angular App">d236ba57db3b6300abddd8c0cf9619ac</sys_scope>
+        <sys_update_name>sys_ui_script_e5078f17db7b6300abddd8c0cf9619a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:26:31</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
